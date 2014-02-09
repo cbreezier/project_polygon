@@ -20,21 +20,21 @@ handlers:
 - url: /fonts
   static_dir: fonts
 
-- url: fonts/(.*\.otf)
+- url: /fonts/(.*\.otf)
   static_files: fonts
-  upload: fonts/(.*\.otf)
+  upload: /fonts/(.*\.otf)
   mime_type: application/x-font-otf
-- url: fonts/(.*\.woff)
+- url: /fonts/(.*\.woff)
   static_files: fonts
-  upload: fonts/(.*\.woff)
+  upload: /fonts/(.*\.woff)
   mime_type: application/x-font-woff
-- url: fonts/(.*\.ttf)
+- url: /fonts/(.*\.ttf)
   static_files: fonts
-  upload: fonts/(.*\.ttf)
+  upload: /fonts/(.*\.ttf)
   mime_type: application/x-font-ttf
-- url: fonts/(.*\.svg)
+- url: /fonts/(.*\.svg)
   static_files: fonts
-  upload: fonts/(.*\.svg)
+  upload: /fonts/(.*\.svg)
   mime_type: image/svg+xml
 
 - url: /js
