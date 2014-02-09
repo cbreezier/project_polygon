@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Project Polygon{% endblock %}
+
+{% block header %}
+<div class="header">
+    <!-- warning: not scaling -->
+    <h1 id="poly">project <b>polygon</b> <img src="/images/7-simplex.svg" alt="7-simplex logo" style="vertical-align:middle"/></h1>
+</div>
+{% endblock %}
+
+{% block nav %}
+<li class="active"><a href="/">Home</a></li>
+<li class="dropdown">
+    <a href="/subjects" class="dropdown-toggle" data-toggle="dropdown">Subjects <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+        <li><a href="/git"><i class="fa fa-github-square fa-fw"></i> Git</a></li>
+        <li><a href="/comp1927"><i class="fa fa-keyboard-o fa-fw"></i> Computing 1B</a></li>
+    </ul>
+</li>
+<li><a href="/updates">Updates</a></li>
+<li><a href="/contact">Contact</a></li>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="col-xs-12 col-sm-8">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">About</h3>
+            </div>
+            <div class="panel-body">
+                <p class="lead">Proin sed tempor ligula, vel hendrerit elit. Ut sed dictum odio. Vestibulum pretium vehicula mi, eu ullamcorper metus consectetur quis. Duis vel blandit libero.</p> Praesent ultrices purus odio, non ultricies odio consectetur ac. Nam sit amet semper eros. Ut in tristique tortor. Donec ultricies vel risus a feugiat. Maecenas lectus enim, scelerisque id posuere scelerisque, posuere et magna. Aenean eget rutrum nulla. Praesent nibh massa, tincidunt id pretium eget, tincidunt eu risus. Suspendisse quis varius elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed a lorem odio. Sed nec convallis metus. Phasellus consequat velit id eros tempus egestas.
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Git</h3>
+            </div>
+            <div class="panel-body">
+                <i class="fa fa-github-square fa-5x pull-left"></i>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor nibh id mauris consectetur tincidunt. Nam in massa quis mauris suscipit bibendum. Sed pretium urna quis aliquet placerat. Sed pharetra malesuada porta. Aliquam consectetur arcu ac tempus vulputate. Phasellus in massa congue, consequat libero ut, semper risus.
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Updates</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
