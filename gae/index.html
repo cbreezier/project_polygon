@@ -1,25 +1,4 @@
-{% extends "base.html" %}
-{% block title %}Project Polygon{% endblock %}
-
-{% block header %}
-<div class="header">
-    <!-- warning: not scaling -->
-    <h1 id="poly">project <b>polygon</b> </h1><img src="/images/7-simplex.svg" alt="7-simplex logo" style="vertical-align:middle;padding-left:5px" class="hidden-xs"/>
-</div>
-{% endblock %}
-
-{% block nav %}
-<li class="active"><a href="/">Home</a></li>
-<li class="dropdown">
-    <a href="/subjects" class="dropdown-toggle" data-toggle="dropdown">Subjects <b class="caret"></b></a>
-    <ul class="dropdown-menu">
-        <li><a href="/git"><i class="fa fa-github-square fa-fw"></i> Git</a></li>
-        <li><a href="/comp1927"><i class="fa fa-keyboard-o fa-fw"></i> Computing 1B</a></li>
-    </ul>
-</li>
-<li><a href="/updates">Updates</a></li>
-<li><a href="/contact">Contact</a></li>
-{% endblock %}
+{% extends "polygon-base.html" %}
 
 {% block content %}
 <div class="container">
