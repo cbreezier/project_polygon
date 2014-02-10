@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Git - Project Polygon{% endblock %}
+
+{% block header %}
+<div class="header">
+    <h1 id="poly">project <b>git</b> <i class="fa fa-github-square fa-3x" alt="git icon" style="vertical-align:middle; height:100px; line-height:0.88"></i></h1>
+</div>
+{% endblock %}
+
+{% block nav %}
+<li><a href="/">Home</a></li>
+<li class="dropdown active">
+    <a href="/subjects" class="dropdown-toggle" data-toggle="dropdown">Subjects <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+        <li class="active"><a href="/git"><i class="fa fa-github-square fa-fw"></i> Git</a></li>
+        <li><a href="/comp1927"><i class="fa fa-keyboard-o fa-fw"></i> Computing 1B</a></li>
+    </ul>
+</li>
+<li><a href="/updates">Updates</a></li>
+<li><a href="/contact">Contact</a></li>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+	<div class="panel panel-default">
+	Hello world!
+	</div>
+</div>
+{% endblock %}
