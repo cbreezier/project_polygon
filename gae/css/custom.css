@@ -1,3 +1,7 @@
 h1#poly {
-    font-family: "Helvetica Neue"
+    font-family: "Helvetica Neue";
+    display: inline-block;
+    height: 100px;
+    text-align: middle;
+    line-height:2.3;
 }
